@@ -1,0 +1,7 @@
+E:\厦门项目\MessageHubAspNet\MessageHub\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+E:\厦门项目\MessageHubAspNet\MessageHub\Data\bin\Debug\Data.dll
+E:\厦门项目\MessageHubAspNet\MessageHub\Data\bin\Debug\Data.pdb
+E:\厦门项目\MessageHubAspNet\MessageHub\Data\bin\Debug\Newtonsoft.Json.dll
+E:\厦门项目\MessageHubAspNet\MessageHub\Data\bin\Debug\Newtonsoft.Json.xml
+E:\厦门项目\MessageHubAspNet\MessageHub\Data\obj\Debug\Data.dll
+E:\厦门项目\MessageHubAspNet\MessageHub\Data\obj\Debug\Data.pdb

@@ -1,0 +1,418 @@
+[
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0001",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0001",
+      "lane_name": "G402",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0002",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0002",
+      "lane_name": "G403",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0003",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0003",
+      "lane_name": "G404",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0004",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0004",
+      "lane_name": "G405",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0005",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0005",
+      "lane_name": "G406",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0006",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0006",
+      "lane_name": "G407",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0007",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0007",
+      "lane_name": "G408",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0008",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0008",
+      "lane_name": "G409",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0009",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0009",
+      "lane_name": "G410",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0010",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0010",
+      "lane_name": "G411",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0011",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0011",
+      "lane_name": "G301",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0012",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0012",
+      "lane_name": "G302",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0013",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0013",
+      "lane_name": "G303",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0014",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0014",
+      "lane_name": "G304",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0015",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0015",
+      "lane_name": "G305",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0016",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0016",
+      "lane_name": "G306",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0017",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0017",
+      "lane_name": "G307",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XHCT-0018",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XHCT-0018",
+      "lane_name": "G308",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XHCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XSCT-0001",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XSCT-0001",
+      "lane_name": "G204",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XSCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XSCT-0002",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XSCT-0002",
+      "lane_name": "G205",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XSCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XSCT-0003",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XSCT-0003",
+      "lane_name": "G206",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XSCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XSCT-0004",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XSCT-0004",
+      "lane_name": "G207",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XSCT",
+      "direction": "In",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XSCT-0005",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XSCT-0005",
+      "lane_name": "G208",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XSCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XSCT-0006",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XSCT-0006",
+      "lane_name": "G209",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XSCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XSCT-0007",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XSCT-0007",
+      "lane_name": "G210",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XSCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  },
+  {
+    "lane_code": "CN-XIAMEN-XSCT-0008",
+    "lane": {
+      "lane_code": "CN-XIAMEN-XSCT-0008",
+      "lane_name": "G211",
+      "country_code": "CN",
+      "city_code": "XIAMEN",
+      "terminal_code": "XSCT",
+      "direction": "Out",
+      "has_truck": false,
+      "lane_type": "重车进闸",
+      "led_display": null,
+      "barrier": "down",
+      "update_time": "2017-04-17 16:10:57"
+    }
+  }
+]

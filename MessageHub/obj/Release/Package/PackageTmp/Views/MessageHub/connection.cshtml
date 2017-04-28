@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html5>
+<html lang="eng">
+<head>
+    <meta charset="utf-8" />
+    <title>none</title>
+    <script src="http://oion935wi.bkt.clouddn.com/jquery-1.6.4.min.js"></script>
+    <script src="http://oion935wi.bkt.clouddn.com/jquery.signalR-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="~/signalr/hubs"></script>
+
+    <style>
+        body {
+            background-image: url("http://ohe5u4k9s.bkt.clouddn.com/bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+            color: #333333;
+            background-color: #ffffff;
+        }
+
+        div {
+            border-radius: 5%;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="span8" style="width:100%">
+        <table class="table table-bordered" id="Main-Table" style="word-wrap:break-word;word-break:break-all;">
+            <tr>
+                <td>连接ID</td>
+                <td>地址</td>
+                <td>端口</td>
+                <td>会话类型</td>
+                <td>名称</td>
+                <td>更新时间</td>
+            </tr>
+        </table>
+    </div>
+    <div class="span8" style="width:100%" id="Status">
+    </div>
+     
+
+
+    <script type="text/javascript">
+
+        $.connection.hub.qs = { Type: "Broswer", Name: "Broswer" };
+
+        var proxy = $.connection.messageHub;
+        $.connection.hub.start(function () {
+            //var condata = { "lane_id": "XM002", "country_code": "CN", "city_code": "XIAXIA", "trminal_code": "SXCT", "lane_name": "G102" };
+            //var str = JSON.stringify(condata)
+            //proxy.server.ChangeStatus("XM001",str);
+            //proxy.server.SendMessage("123", "123");
+        });
+
+
+
+
+
+
+        proxy.client.GetSessionList = function (datas) {
+            var objs = JSON.parse(datas);
+            $("#Main-Table  tr:not(:first)").empty("");
+            for (var i = 0; i < objs.length; i++) {
+
+
+                $('#Main-Table').append(
+                    "<tr><td>" + objs[i].ConnectionID
+                    + "</td><td>" + objs[i].IPAddress
+                    + "</td><td>" + objs[i].Port
+                    + "</td><td>" + objs[i].ClientType
+                    + "</td><td>" + objs[i].ClientName
+                    + "</td><td>" + objs[i].ConnectionTime
+                    + "</td></tr>"
+
+                );
+            }
+
+        }
+        proxy.client.messageStatus = function (datas) {
+            if ($('#Status').children().length > 10)
+            {
+                $('#Status').empty("");
+                $('#Status').append("<p>" + "状态消息超过20条，页面重刷" + "<p>");
+            }
+            $('#Status').append("<p>" + datas + "</p>");
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
