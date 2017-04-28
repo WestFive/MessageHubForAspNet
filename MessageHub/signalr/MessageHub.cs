@@ -122,7 +122,7 @@ namespace signalr.MessageHub
                 }
                 catch (Exception ex)
                 {
-                   Loger.AddErrorText("刷新模块", ex);
+                    Loger.AddErrorText("刷新模块", ex);
 
                 }
             }
@@ -503,7 +503,7 @@ namespace signalr.MessageHub
             catch (Exception ex)
             {
                 Loger.AddErrorText("连接事件", ex);
-                
+
             }
 
             return base.OnConnected();
@@ -558,6 +558,17 @@ namespace signalr.MessageHub
 
             //addTolog("断开服务器");
             return base.OnDisconnected(stopCalled);
+        }
+        #endregion
+
+        #region 重连事件
+        /// <summary>
+        /// 重连触发连接事件。
+        /// </summary>
+        /// <returns></returns>
+        public override Task OnReconnected()
+        {
+            return base.OnConnected();
         }
         #endregion
         #region 给予前端修改的执行结果反馈
