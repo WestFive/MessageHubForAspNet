@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageHub", "MessageHub\MessageHub.csproj", "{51192C1D-16FA-40FC-8BB4-2B8B76739019}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageHubTests", "MessageHubTests\MessageHubTests.csproj", "{C7D74F88-2998-4152-A502-BC245F46AF16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{51192C1D-16FA-40FC-8BB4-2B8B76739019}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51192C1D-16FA-40FC-8BB4-2B8B76739019}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51192C1D-16FA-40FC-8BB4-2B8B76739019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7D74F88-2998-4152-A502-BC245F46AF16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7D74F88-2998-4152-A502-BC245F46AF16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7D74F88-2998-4152-A502-BC245F46AF16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7D74F88-2998-4152-A502-BC245F46AF16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
