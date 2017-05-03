@@ -75,6 +75,20 @@ namespace Data.Model
         public object server { get; set; }
     }
 
+    /// <summary>
+    /// WatchDog状态对象
+    /// </summary>
+    public class PF_Message_Server_Object
+    {
+        public string server_code { get; set; }
+        public string server_name { get; set; }
+        public string ip_address { get; set; }
+        public string subnet_mask { get; set; }
+        public string watchdog_name { get; set; }
+        public string watchdog_status { get; set; }
+        public object[] lane_apps { get; set; }
+    }
+
 
 
 

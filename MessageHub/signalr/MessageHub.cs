@@ -170,15 +170,12 @@ namespace signalr.MessageHub
                 List<object> servers = new List<object>();
                 if (serverList.Count != 0)
                 {
-                    //foreach (var item in serverList)
-                    //{
-                    //    servers.Add(item.Value);
-                    //}
-
+                    WatchDogCheck();//检查
                     Parallel.ForEach(serverList, item =>
                     {
                         servers.Add(item.Value);
                     });
+
                 }
                 try
                 {
@@ -449,6 +446,26 @@ namespace signalr.MessageHub
                 Loger.AddErrorText("WatchDog获取自身缓存", ex);
             }
         }
+
+        public void WatchDogCheck()
+        {
+            List<object> list = new List<object>();
+            foreach (var item in serverList)
+            {
+                list.Add(item.Value);
+            }
+            for (int i = 0; i < list.Count; i++)
+            {
+                PF_Message_Server_Object server = JsonHelper.DeserializeJsonToObject<PF_Message_Server_Object>(JsonHelper.SerializeObject(list[i]));
+                if (sessionObjectList.Count(x => x.ClientName == server.server_code) == 0)
+                {
+                    server.watchdog_status = "离线";
+                    serverList[server.server_code] = JsonHelper.DeserializeJsonToObject<object>(JsonHelper.SerializeObject(server));
+                }
+            }
+
+        }
+
         #endregion
         #region  添加到会话缓存列表
         private void AddToSession()
@@ -636,7 +653,6 @@ namespace signalr.MessageHub
             return base.OnDisconnected(stopCalled);
         }
         #endregion
-
         #region 重连事件
         /// <summary>
         /// 重连触发连接事件。

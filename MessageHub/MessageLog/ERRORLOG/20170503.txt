@@ -1,0 +1,647 @@
+2017/5/3 14:18:04  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:18:04
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:18:04
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshLaneList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 109
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 583
+***************************************************************
+
+2017/5/3 14:19:50  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:19:50
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:19:50
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 585
+***************************************************************
+
+2017/5/3 14:21:40  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:21:40
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:21:40
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 585
+***************************************************************
+
+2017/5/3 14:21:45  ****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:21:45
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:21:45
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 640
+***************************************************************
+
+2017/5/3 14:21:45  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:21:45
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:21:45
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 585
+***************************************************************
+
+2017/5/3 14:22:28  ****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:28
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:28
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 640
+***************************************************************
+
+2017/5/3 14:22:28  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:28
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:28
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 585
+***************************************************************
+
+2017/5/3 14:22:30  ****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:30
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:30
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 640
+***************************************************************
+
+2017/5/3 14:22:30  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:30
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:30
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 585
+***************************************************************
+
+2017/5/3 14:22:31  ****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:31
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:31
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 640
+***************************************************************
+
+2017/5/3 14:22:31  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:31
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:31
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 585
+***************************************************************
+
+2017/5/3 14:22:32  ****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:32
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:32
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 640
+***************************************************************
+
+2017/5/3 14:22:32  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:32
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:32
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 585
+***************************************************************
+
+2017/5/3 14:22:33  ****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:33
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:33
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 640
+***************************************************************
+
+2017/5/3 14:22:33  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:33
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:33
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 585
+***************************************************************
+
+2017/5/3 14:22:35  ****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:35
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:35
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 640
+***************************************************************
+
+2017/5/3 14:22:35  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:35
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:35
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 585
+***************************************************************
+
+2017/5/3 14:22:37  ****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:37
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:22:37
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 640
+***************************************************************
+
+2017/5/3 14:22:37  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:37
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:22:37
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 585
+***************************************************************
+
+2017/5/3 14:24:10  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:24:10
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:24:10
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 585
+***************************************************************
+
+2017/5/3 14:30:33  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:30:33
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:30:33
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 586
+***************************************************************
+
+2017/5/3 14:30:39  ****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:30:39
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:30:39
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 641
+***************************************************************
+
+2017/5/3 14:30:41  ****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:30:41
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Th****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:30:41
+【异常类型】：AggregateException
+【异常信息】：发生一个或多个错误。
+【堆栈调用】：   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   在 System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 178
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 586
+***************************************************************
+
+****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:33:54
+【异常类型】：InvalidOperationException
+【异常信息】：集合已修改；可能无法执行枚举操作。
+【堆栈调用】：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   在 signalr.MessageHub.MessageHub.WatchDogCheck() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 458
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 177
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 591
+***************************************************************
+
+****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:33:57
+【异常类型】：InvalidOperationException
+【异常信息】：集合已修改；可能无法执行枚举操作。
+【堆栈调用】：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   在 signalr.MessageHub.MessageHub.WatchDogCheck() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 458
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 177
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 646
+***************************************************************
+
+****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:33:57
+【异常类型】：InvalidOperationException
+【异常信息】：集合已修改；可能无法执行枚举操作。
+【堆栈调用】：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   在 signalr.MessageHub.MessageHub.WatchDogCheck() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 458
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 177
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 591
+***************************************************************
+
+****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:34:05
+【异常类型】：InvalidOperationException
+【异常信息】：集合已修改；可能无法执行枚举操作。
+【堆栈调用】：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   在 signalr.MessageHub.MessageHub.WatchDogCheck() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 458
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 177
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 646
+***************************************************************
+
+****************************异常文本****************************
+【模块名称】：连接事件
+【出现时间】：2017/5/3 14:34:05
+【异常类型】：InvalidOperationException
+【异常信息】：集合已修改；可能无法执行枚举操作。
+【堆栈调用】：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   在 signalr.MessageHub.MessageHub.WatchDogCheck() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 458
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 177
+   在 signalr.MessageHub.MessageHub.OnConnected() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 591
+***************************************************************
+
+****************************异常文本****************************
+【模块名称】：断开连接模块
+【出现时间】：2017/5/3 14:34:22
+【异常类型】：InvalidOperationException
+【异常信息】：集合已修改；可能无法执行枚举操作。
+【堆栈调用】：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Enumerator.MoveNext()
+   在 signalr.MessageHub.MessageHub.WatchDogCheck() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 458
+   在 signalr.MessageHub.MessageHub.refreshServerList() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 177
+   在 signalr.MessageHub.MessageHub.OnDisconnected(Boolean stopCalled) 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 646
+***************************************************************
+
