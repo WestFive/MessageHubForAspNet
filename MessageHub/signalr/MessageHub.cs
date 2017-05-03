@@ -82,41 +82,107 @@ namespace signalr.MessageHub
         /// </summary>
         public void F5()
         {
+            try
+            {
+                Clients.All.GetSessionList(JsonHelper.SerializeObject(sessionObjectList));
+            }
+            catch (Exception ex)
+            {
+                Loger.AddErrorText("刷新会话", ex);
+            }
+
+        }
+        /// <summary>
+        /// 刷新车道
+        /// </summary>
+        public void refreshLaneList()
+        {
             if (laneList.Count != 0)
             {
                 laneList.OrderBy(x => x.Key[x.Key.Length - 1]);
                 List<object> lanes = new List<object>();
-                foreach (var item in laneList)
+                //foreach (var item in laneList)
+                //{
+                //    lanes.Add(item.Value);
+
+                //}
+                Parallel.ForEach(laneList, item =>
                 {
                     lanes.Add(item.Value);
-
+                });
+                try
+                {
+                    Clients.All.GetLaneList(JsonHelper.SerializeObject(lanes));
                 }
+                catch (Exception ex)
+                {
+                    Loger.AddErrorText("车道刷新模块", ex);
+                }
+            }
 
 
+        }
 
+        /// <summary>
+        /// 刷新作业
+        /// </summary>
+        public void refreshQueueList()
+        {
+            if (laneList.Count != 0)
+            {
                 List<object> queues = new List<object>();
                 if (QueueList.Count != 0)
                 {
-                    foreach (var item in QueueList)
+                    //foreach (var item in QueueList)
+                    //{
+                    //    queues.Add(item.Value.queue);
+                    //}
+                    Parallel.ForEach(QueueList, item =>
                     {
                         queues.Add(item.Value.queue);
-                    }
+                    });
+
                     queues.Reverse();
-                }
-                List<object> servers = new List<object>();
-                if (serverList.Count != 0)
-                {
-                    foreach (var item in serverList)
-                    {
-                        servers.Add(item.Value);
-                    }
-                    servers.Reverse();
                 }
                 try
                 {
 
-                    Clients.All.GetLaneList(JsonHelper.SerializeObject(lanes));
+
                     Clients.All.GetQueueList(JsonHelper.SerializeObject(queues));
+
+                }
+                catch (Exception ex)
+                {
+                    Loger.AddErrorText("作业缓存刷新模块", ex);
+
+                }
+            }
+
+        }
+
+        /// <summary>
+        /// 刷新WatchDog
+        /// </summary>
+        public void refreshServerList()
+        {
+            if (laneList.Count != 0)
+            {
+                List<object> servers = new List<object>();
+                if (serverList.Count != 0)
+                {
+                    //foreach (var item in serverList)
+                    //{
+                    //    servers.Add(item.Value);
+                    //}
+
+                    Parallel.ForEach(serverList, item =>
+                    {
+                        servers.Add(item.Value);
+                    });
+                }
+                try
+                {
+
                     Clients.All.GetServerList(JsonHelper.SerializeObject(servers));
 
                 }
@@ -126,7 +192,6 @@ namespace signalr.MessageHub
 
                 }
             }
-            Clients.All.GetSessionList(JsonHelper.SerializeObject(sessionObjectList));
 
         }
         #endregion
@@ -272,6 +337,7 @@ namespace signalr.MessageHub
                             }
 
                         }
+                        refreshLaneList();//刷新车道
                         break;
                     case "queue":
                         lock (QueueList)
@@ -308,10 +374,13 @@ namespace signalr.MessageHub
                                         QueueList.TryRemove(QueueList.FirstOrDefault(x => x.Value.queue_code == queuecontent.queue_code).Key, out outobj);
                                         GetMessageHubStatus(queuecontent.lane_code + "删除作业" + queuecontent.queue_code);
                                     }
+
                                     break;
                             }
 
+
                         }
+                        refreshQueueList();//刷新作业
                         break;
                     case "server":
                         lock (serverList)
@@ -322,7 +391,9 @@ namespace signalr.MessageHub
                                 serverList[servercontent.server_code] = servercontent.server;//更新server
                                 GetMessageHubStatus("看门狗" + servercontent.server_code + "修改了自身缓存");
                             }
+
                         }
+                        refreshServerList();//刷新WatchDog;
                         break;
                         //case "serve"
                 }
@@ -336,7 +407,7 @@ namespace signalr.MessageHub
             }
             finally
             {
-                F5();//刷新
+                F5();//刷新会话列表
             }
 
         }
@@ -495,7 +566,10 @@ namespace signalr.MessageHub
                 //}
                 #endregion
 
-                F5();//刷新
+                F5();
+                refreshLaneList();//刷新车道。
+                refreshQueueList();
+                refreshServerList();//刷新WatchDog
                 #region 测试用
 
                 #endregion
@@ -549,6 +623,8 @@ namespace signalr.MessageHub
                 }
 
                 F5();
+                refreshLaneList();//刷新车道。
+                refreshServerList();//刷新WatchDog
             }
             catch (Exception ex)
             {
