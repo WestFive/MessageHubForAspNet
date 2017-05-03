@@ -16,10 +16,10 @@
       <publishTime>02/22/2013 08:43:40</publishTime>
     </File>
     <File Include="bin/Data.dll">
-      <publishTime>05/02/2017 16:27:11</publishTime>
+      <publishTime>05/03/2017 17:03:30</publishTime>
     </File>
     <File Include="bin/MessageHub.dll">
-      <publishTime>05/03/2017 09:38:40</publishTime>
+      <publishTime>05/03/2017 17:03:35</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>11/30/2016 16:07:42</publishTime>
@@ -259,7 +259,7 @@
       <publishTime>04/27/2017 17:13:52</publishTime>
     </File>
     <File Include="Views/MessageHub/server.cshtml">
-      <publishTime>04/28/2017 11:21:41</publishTime>
+      <publishTime>05/03/2017 14:21:19</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>04/28/2017 11:31:13</publishTime>
