@@ -1,0 +1,76 @@
+2017/5/4 10:43:56Broswer:连接了
+2017/5/4 10:44:22WatchDog:连接了
+Time:2017-05-04 10:44:43User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:44:43\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:45:37User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:45:37\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:46:26User:CN-XIAMEN-XHCT-LS1Message:"与服务器断开连接"
+2017/5/4 10:46:26a00065c6-1a35-47a5-9b42-3d8cebb09eec与服务断开连接
+2017/5/4 10:48:45WatchDog:连接了
+Time:2017-05-04 10:48:55User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:48:55\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:49:26User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:49:26\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:49:42User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:49:42\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0002\"}}}"
+Time:2017-05-04 10:49:46User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:49:46\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0003\"}}}"
+Time:2017-05-04 10:49:50User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:49:50\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0004\"}}}"
+Time:2017-05-04 10:50:00User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:50:00\",\"directive\":{\"directive_id\":null,\"directive_name\":\"startup_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0004\"}}}"
+Time:2017-05-04 10:50:07User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:50:07\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0004\"}}}"
+Time:2017-05-04 10:50:22User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:50:22\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0004\"}}}"
+Time:2017-05-04 10:50:25User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:50:25\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0004\"}}}"
+Time:2017-05-04 10:50:31User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:50:31\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0004\"}}}"
+Time:2017-05-04 10:51:17User:CN-XIAMEN-XHCT-LS1Message:"与服务器断开连接"
+2017/5/4 10:51:17d31e5e9f-0ef5-4630-a3a5-01e6d747e2ba与服务断开连接
+2017/5/4 10:53:23WatchDog:连接了
+Time:2017-05-04 10:53:57User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:53:57\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:03User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:03\",\"directive\":{\"directive_id\":null,\"directive_name\":\"startup_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:10User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:10\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:23User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:23\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:26User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:26\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:27User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:27\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:28User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:28\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:29User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:29\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:30User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:30\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:31User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:31\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:32User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:32\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:34User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:34\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:35User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:35\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:36User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:36\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:54:51User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:54:51\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:55:42User:CN-XIAMEN-XHCT-LS1Message:"与服务器断开连接"
+2017/5/4 10:55:42062fcc06-02de-47ff-aa78-cad2d12ce92f与服务断开连接
+2017/5/4 10:55:48WatchDog:连接了
+Time:2017-05-04 10:55:56User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:55:56\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:56:49User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:56:49\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:56:55User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:56:55\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:57:00User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:57:00\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:57:06User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 10:57:06\",\"directive\":{\"directive_id\":null,\"directive_name\":\"restart_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 10:58:02User:CN-XIAMEN-XHCT-LS1Message:"与服务器断开连接"
+2017/5/4 10:58:02cb4501bf-4f56-4abd-a606-4e157828761f与服务断开连接
+2017/5/4 11:10:39Broswer:连接了
+2017/5/4 11:10:42bca56805-5f50-4e99-9a8d-0f0faf6a2f4d与服务断开连接
+2017/5/4 11:10:42Broswer:连接了
+2017/5/4 11:10:51WatchDog:连接了
+Time:2017-05-04 11:11:11User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 11:11:11\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 11:11:55User:CN-XIAMEN-XHCT-LS1Message:"与服务器断开连接"
+2017/5/4 11:11:55b668748c-9c43-40a3-8d4e-6da6696b3d78与服务断开连接
+2017/5/4 11:20:51Broswer:连接了
+2017/5/4 11:23:28Broswer:连接了
+2017/5/4 11:30:02Broswer:连接了
+2017/5/4 11:30:50d9c8e18d-deb5-4ef4-9917-f3ce4ff4f36b与服务断开连接
+2017/5/4 11:30:50Broswer:连接了
+2017/5/4 11:30:59WatchDog:连接了
+Time:2017-05-04 11:31:21User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 11:31:21\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+2017/5/4 11:32:30Broswer:连接了
+2017/5/4 11:32:3409c49c54-b7d5-490c-9ab4-f33058477998与服务断开连接
+2017/5/4 11:32:35Broswer:连接了
+2017/5/4 11:33:54Broswer:连接了
+2017/5/4 11:33:57475177d5-ea44-4966-8535-c4e0736453f5与服务断开连接
+2017/5/4 11:33:57Broswer:连接了
+2017/5/4 11:34:34Broswer:连接了
+2017/5/4 11:34:3714985b80-6418-418c-a690-57df2b1b47c9与服务断开连接
+2017/5/4 11:34:37Broswer:连接了
+2017/5/4 11:34:48WatchDog:连接了
+Time:2017-05-04 11:35:08User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 11:35:08\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0001\"}}}"
+Time:2017-05-04 11:35:11User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 11:35:11\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0002\"}}}"
+Time:2017-05-04 11:35:14User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 11:35:14\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0003\"}}}"
+Time:2017-05-04 11:35:18User:CN-XIAMEN-XHCT-LS1Message:"{\"message_type\":\"directive\",\"message_content\":{\"recipient\":\"WatchDog\",\"recipient_code\":\"CN-XIAMEN-XHCT-LS1\",\"send_time\":\"2017/5/4 11:35:18\",\"directive\":{\"directive_id\":null,\"directive_name\":\"shutdown_agent\",\"lane_code\":\"CN-XIAMEN-XHCT-0004\"}}}"
+Time:2017-05-04 11:35:59User:CN-XIAMEN-XHCT-LS1Message:"与服务器断开连接"
+2017/5/4 11:35:59c37c2b9e-03e7-4a0a-9ac0-4a7e8ad75ec8与服务断开连接
+2017/5/4 11:37:16WatchDog:连接了

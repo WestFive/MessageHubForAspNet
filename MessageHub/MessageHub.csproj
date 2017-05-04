@@ -183,6 +183,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="conf\lanes.json" />
     <Content Include="conf\nlog.config" />
+    <Content Include="conf\servers-example.json" />
     <Content Include="conf\servers.json" />
     <None Include="Properties\PublishProfiles\message.config.pubxml" />
     <None Include="Web.Debug.config">

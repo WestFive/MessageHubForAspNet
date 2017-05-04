@@ -38,10 +38,19 @@ namespace signalr.MessageHub
             }
             if (serverList.Count == 0)
             {
-                List<ServerCache> servers = JsonHelper.DeserializeJsonToList<ServerCache>(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "conf/servers.json"));
-                foreach (var item in servers)
+                if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "conf/servers.json"))
                 {
-                    serverList.Add(item.server_code, item.server);
+                    serverList = JsonHelper.DeserializeJsonToObject<Dictionary<string, object>>(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "conf/servers.json"));
+
+                }
+                else if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + "conf/servers-example.json"))
+                {
+                    List<ServerCache> servers = JsonHelper.DeserializeJsonToList<ServerCache>(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "conf/servers-example.json"));
+                    foreach (var item in servers)
+                    {
+                        serverList.Add(item.server_code, item.server);
+                    }
+
                 }
             }
 
@@ -170,7 +179,7 @@ namespace signalr.MessageHub
                 List<object> servers = new List<object>();
                 if (serverList.Count != 0)
                 {
-                    WatchDogCheck();//检查
+                   
                     Parallel.ForEach(serverList, item =>
                     {
                         servers.Add(item.Value);
@@ -461,11 +470,45 @@ namespace signalr.MessageHub
                 {
                     server.watchdog_status = "离线";
                     serverList[server.server_code] = JsonHelper.DeserializeJsonToObject<object>(JsonHelper.SerializeObject(server));
+
                 }
             }
 
         }
 
+        public void SaveServerCache()
+        {
+            try
+            {
+                if (serverList.Count != 0)
+                {
+
+                    File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + "conf/servers.json", JsonHelper.SerializeObject(serverList));
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                Loger.AddErrorText("回存server缓存失败", ex);
+            }
+        }
+
+        public void LoadServerDefaultCache()
+        {
+            try
+            {
+                List<ServerCache> servers = JsonHelper.DeserializeJsonToList<ServerCache>(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "conf/servers-example.json"));
+                foreach (var item in servers)
+                {
+                    serverList.Add(item.server_code, item.server);
+                }
+            }
+            catch (Exception ex)
+            {
+                Loger.AddErrorText("还原出厂缓存失败", ex);
+            }
+        }
         #endregion
         #region  添加到会话缓存列表
         private void AddToSession()
@@ -642,6 +685,7 @@ namespace signalr.MessageHub
                 F5();
                 refreshLaneList();//刷新车道。
                 refreshServerList();//刷新WatchDog
+                WatchDogCheck();//检查
             }
             catch (Exception ex)
             {
