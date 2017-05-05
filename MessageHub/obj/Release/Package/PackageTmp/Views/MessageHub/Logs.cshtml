@@ -1,5 +1,6 @@
-﻿@{
-    ViewData["Title"] = "About";
+﻿
+@{
+    ViewBag.Title = "Logs";
 }
 <!DOCTYPE html5>
 <html lang="eng">
@@ -10,6 +11,7 @@
     <script src="http://oion935wi.bkt.clouddn.com/jquery.signalR-2.2.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="~/signalr/hubs"></script>
+
     <style>
         body {
             background-image: url("http://ohe5u4k9s.bkt.clouddn.com/bg.jpg");
@@ -24,19 +26,49 @@
         div {
             border-radius: 5%;
         }
-
-        p {
-            font-size: 5px;
-        }
     </style>
 </head>
 <body>
-    <div style="width:100%">
-     <h1>Directive</h1>
-      <h1>管理员方法</h1>
-        <p>proxy.server.clear();      请空所有作业</p>
-        <p>proxy.server.hubRestart();   重启消息服务</p>
-        <p>proxy.server.getTodayLog();//获取今天的日志，同时需要开启接收。   proxy.client.readLogs(function(data)=>{处理data})</p>
+
+    <div class="span8" style="width:100%">
+
+        <table class="table table-bordered" id="Main-Table">
+            <tr>
+                <td>logs</td>
+            </tr>
+        </table>
     </div>
+
+
+    <script type="text/javascript">
+
+        $.connection.hub.qs = { Type: "Broswer", Name: "Broswer" };
+
+        var proxy = $.connection.messageHub;
+        $.connection.hub.start(function () {
+
+            proxy.server.getTodayLog(1);
+        });
+
+        proxy.client.readLogs = function (datas) {
+            var objs = JSON.parse(datas);
+            $("#Main-Table  tr:not(:first)").empty("");
+            for (var i = 0; i < objs.length; i++) {
+                $('#Main-Table').append(
+                    "<tr><td>" + objs[i]
+                    + "</td></tr>"
+
+                );
+            }
+
+        }
+
+
+
+
+
+
+    </script>
 </body>
 </html>
+
