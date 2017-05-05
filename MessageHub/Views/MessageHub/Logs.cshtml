@@ -1,5 +1,6 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@{
+    ViewBag.Title = "Logs";
 }
 <!DOCTYPE html5>
 <html lang="eng">
@@ -28,18 +29,12 @@
     </style>
 </head>
 <body>
-   
+
     <div class="span8" style="width:100%">
-      
-        <table class="table table-bordered" id="Main-Table" >
+
+        <table class="table table-bordered" id="Main-Table">
             <tr>
-                <td>server_code</td>
-                <td>server_name</td>
-                <td>ip_address</td>
-                <td>subnet_mask</td>
-                <td>watchdog_name</td>
-                <td>watchdog_status</td>
-                <td>lane_apps</td>
+                <td>logs</td>
             </tr>
         </table>
     </div>
@@ -52,24 +47,15 @@
         var proxy = $.connection.messageHub;
         $.connection.hub.start(function () {
 
-          
+            proxy.server.getTodayLog(1);
         });
 
-        proxy.client.GetServerList = function (datas) {
+        proxy.client.readLogs = function (datas) {
             var objs = JSON.parse(datas);
             $("#Main-Table  tr:not(:first)").empty("");
             for (var i = 0; i < objs.length; i++) {
-
-                var apps = JSON.stringify(objs[i].lane_apps);
-
                 $('#Main-Table').append(
-                    "<tr><td>" + objs[i].server_code
-                    + "</td><td>" + objs[i].server_name
-                    + "</td><td>" + objs[i].ip_address
-                    + "</td><td>" + objs[i].subnet_mask
-                    + "</td><td>" + objs[i].watchdog_name
-                    + "</td><td>" + objs[i].watchdog_status
-                    + "</td><td style='height:200px;width: 800px; display: inline - block; overflow: auto; float: right; word-wrap:break-word;word-break:break-all'>" + apps 
+                    "<tr><td>" + objs[i]
                     + "</td></tr>"
 
                 );

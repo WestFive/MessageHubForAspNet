@@ -45,5 +45,10 @@ namespace MessageHub.Controllers
 
             return View();
         }
+
+        public ActionResult Logs()
+        {
+            return View();
+        }
     }
 }

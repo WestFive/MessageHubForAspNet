@@ -28,7 +28,9 @@
     </style>
 </head>
 <body>
+   
     <div class="span8" style="width:100%">
+      
         <table class="table table-bordered" id="Main-Table" >
             <tr>
                 <td>server_code</td>
@@ -50,6 +52,7 @@
         var proxy = $.connection.messageHub;
         $.connection.hub.start(function () {
 
+          
         });
 
         proxy.client.GetServerList = function (datas) {

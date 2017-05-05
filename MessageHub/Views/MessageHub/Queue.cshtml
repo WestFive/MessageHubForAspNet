@@ -25,14 +25,14 @@
         div {
             border-radius: 5%;
         }
-
     </style>
 </head>
 <body>
-
+    <button id="BtnClear">清空</button>
     <div class="span8" style="width:100%">
         <table class="table table-bordered" id="MessageContent-Table" style="word-wrap:break-word;word-break:break-all;">
-            <tr style="width:100%">Queues
+            <tr style="width:100%">
+                Queues
                 <td>Value</td>
             </tr>
         </table>
@@ -40,7 +40,16 @@
     <script type="text/javascript">
 
         $.connection.hub.start().done(function () {//与Hub服务器连接
-           
+
+            $("#BtnClear").click(function () {
+                if (window.confirm('你确定清空作业缓存吗？')) {
+                    proxy.server.clear();
+                } else {
+                    //alert("取消");
+                    return false;
+                }
+                
+            });
         });
 
         var proxy = $.connection.messageHub; //连接到具体的Hub.
@@ -49,7 +58,7 @@
             var lane_caches = JSON.parse(datas);
 
             $("#MessageContent-Table tr:not(:first)").empty("");
-         
+
 
             for (var i = 0; i < lane_caches.length; i++) {
 

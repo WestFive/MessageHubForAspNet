@@ -142,6 +142,7 @@ namespace signalr.MessageHub
                 List<object> queues = new List<object>();
                 if (QueueList.Count != 0)
                 {
+
                     //foreach (var item in QueueList)
                     //{
                     //    queues.Add(item.Value.queue);
@@ -179,7 +180,7 @@ namespace signalr.MessageHub
                 List<object> servers = new List<object>();
                 if (serverList.Count != 0)
                 {
-                   
+                    //WatchDogCheck();//检查
                     Parallel.ForEach(serverList, item =>
                     {
                         servers.Add(item.Value);
@@ -201,13 +202,7 @@ namespace signalr.MessageHub
 
         }
         #endregion
-        #region 清空作业
-        public void Clear()
-        {
-            QueueList.Clear();
-            F5();
-        }
-        #endregion
+
         #region 车道监控发送消息给车道代理
         /// <summary>
         /// 发送消息
@@ -233,7 +228,7 @@ namespace signalr.MessageHub
                             {
                                 Clients.Client(sessionObjectList[sessionObjectList.FindIndex(x => x.ClientName == laneCode)].ConnectionID).reciveMessage(JsonHelper.SerializeObject(obj));
 
-                                InsertLog(lanecontent.lane_code, JsonHelper.SerializeObject(obj));
+                                InsertLog("投递信息给:" + lanecontent.lane_code + "\r" + "信息内容是" + JsonHelper.SerializeObject(obj));
                                 GetMessageHubStatus("已通知车道laneID为:" + laneCode + "信息类型：lane");
                             }
 
@@ -244,7 +239,7 @@ namespace signalr.MessageHub
                         if (sessionObjectList.Count(x => x.ClientName == directivecontent.recipient_code) > 0)
                         {
                             Clients.Client(sessionObjectList[sessionObjectList.FindIndex(x => x.ClientName == directivecontent.recipient_code)].ConnectionID).reciveMessage(JsonHelper.SerializeObject(obj));
-                            InsertLog(directivecontent.recipient_code, JsonHelper.SerializeObject(obj));
+                            InsertLog("投递信息给" + directivecontent.recipient_code + "\r" + "信息内容是" + JsonHelper.SerializeObject(obj));
                             GetMessageHubStatus("已通知车道laneID为:" + laneCode + "信息类型：directive");
                         }
                         break;
@@ -258,7 +253,7 @@ namespace signalr.MessageHub
 
                                 Clients.Client(sessionObjectList[sessionObjectList.FindIndex(x => x.ClientName == laneCode)].ConnectionID).reciveMessage(JsonHelper.SerializeObject(obj));
 
-                                InsertLog(queuecontent.lane_code, JsonHelper.SerializeObject(obj));
+                                InsertLog("投递信息给" + queuecontent.lane_code + "\r" + "信息内容是" + JsonHelper.SerializeObject(obj));
                                 GetMessageHubStatus("已通知车道laneID为:" + queuecontent.lane_code + "信息类型：queue");
                             }
 
@@ -272,7 +267,7 @@ namespace signalr.MessageHub
                             if (serverList.Count(x => x.Key == laneCode) > 0)
                             {
                                 Clients.Client(sessionObjectList[sessionObjectList.FindIndex(x => x.ClientName == laneCode)].ConnectionID).reciveMessage(JsonHelper.SerializeObject(obj));
-                                InsertLog(servers.server_code, JsonHelper.SerializeObject(obj));
+                                InsertLog("投递信息给" + servers.server_code + "\r信息内容是" + JsonHelper.SerializeObject(obj));
                                 GetMessageHubStatus("已通知WatchDogID为" + servers.server_code + "信息");
                             }
                         }
@@ -303,15 +298,16 @@ namespace signalr.MessageHub
             }
         }
 
-        private void InsertLog(string User, string Value)
+        private void InsertLog(string Value)
         {
             try
             {
-                Loger.AddLogText("Time:" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "User:" + User + "Message:" + JsonHelper.SerializeObject(Value));
+                Loger.AddLogText("Time:" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "-Info:" + JsonHelper.SerializeObject(Value));
             }
             catch (Exception ex)
             {
                 //.LogError(ex.ToString());
+                Loger.AddErrorText("INsertlog", ex);
             }
         }
         #endregion
@@ -476,6 +472,10 @@ namespace signalr.MessageHub
 
         }
 
+
+        /// <summary>
+        /// 回存WatchDog缓存
+        /// </summary>
         public void SaveServerCache()
         {
             try
@@ -494,21 +494,6 @@ namespace signalr.MessageHub
             }
         }
 
-        public void LoadServerDefaultCache()
-        {
-            try
-            {
-                List<ServerCache> servers = JsonHelper.DeserializeJsonToList<ServerCache>(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "conf/servers-example.json"));
-                foreach (var item in servers)
-                {
-                    serverList.Add(item.server_code, item.server);
-                }
-            }
-            catch (Exception ex)
-            {
-                Loger.AddErrorText("还原出厂缓存失败", ex);
-            }
-        }
         #endregion
         #region  添加到会话缓存列表
         private void AddToSession()
@@ -630,6 +615,7 @@ namespace signalr.MessageHub
                 refreshLaneList();//刷新车道。
                 refreshQueueList();
                 refreshServerList();//刷新WatchDog
+
                 #region 测试用
 
                 #endregion
@@ -658,7 +644,7 @@ namespace signalr.MessageHub
                     {
                         //temp.lane = null;//离线清空
 
-                        InsertLog(temp.Key, "与服务器断开连接");
+                        InsertLog(temp.Key + "与服务器断开连接");
                     }
                 }
                 if (sessionObjectList.Count(x => x.ConnectionID == Context.ConnectionId) > 0)
@@ -669,7 +655,7 @@ namespace signalr.MessageHub
                     {
                         //temp.lane = null;//离线清空
 
-                        InsertLog(temp.Key, "与服务器断开连接");
+                        InsertLog(temp.Key + "与服务器断开连接");
                         GetMessageHubStatus(temp.Key + "与服务器断开连接");
                     }
                 }
@@ -685,7 +671,8 @@ namespace signalr.MessageHub
                 F5();
                 refreshLaneList();//刷新车道。
                 refreshServerList();//刷新WatchDog
-                WatchDogCheck();//检查
+                WatchDogCheck();
+
             }
             catch (Exception ex)
             {
@@ -712,7 +699,53 @@ namespace signalr.MessageHub
         public void GetMessageHubStatus(string str)
         {
             Clients.All.messageStatus(DateTime.Now.ToString() + str);
+            InsertLog(str);
         }
         #endregion
+
+        #region AdminMethod
+        #region 读取还原servers为初始缓存
+        public void LoadServerDefaultCache()
+        {
+            try
+            {
+                List<ServerCache> servers = JsonHelper.DeserializeJsonToList<ServerCache>(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "conf/servers-example.json"));
+                foreach (var item in servers)
+                {
+                    serverList.Add(item.server_code, item.server);
+                }
+            }
+            catch (Exception ex)
+            {
+                Loger.AddErrorText("还原出厂缓存失败", ex);
+            }
+        }
+        #endregion
+        #region 清空作业
+        public void Clear()
+        {
+            QueueList.Clear();
+            F5();
+            refreshQueueList();
+        }
+        #endregion
+        public void HubRestart()
+        {
+            this.Dispose();
+            MessageHub hub = new MessageHub();
+
+        }
+
+        public void GetTodayLog(int days)
+        {
+            List<string> list = Loger.ReadFromLogTxt(DateTime.Now, days);
+            Clients.All.ReadLogs(JsonHelper.SerializeObject(list));
+        }
+
+        #endregion 
+
+
+
+
     }
 }

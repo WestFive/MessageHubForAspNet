@@ -186,6 +186,7 @@
     <Content Include="conf\servers-example.json" />
     <Content Include="conf\servers.json" />
     <None Include="Properties\PublishProfiles\message.config.pubxml" />
+    <Content Include="Views\MessageHub\Logs.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
