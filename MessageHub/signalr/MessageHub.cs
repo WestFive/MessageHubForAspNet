@@ -741,11 +741,7 @@ namespace signalr.MessageHub
             List<string> list = Loger.ReadFromLogTxt(DateTime.Now, days);
             Clients.All.ReadLogs(JsonHelper.SerializeObject(list));
         }
-
         #endregion 
-
-
-
 
     }
 }
