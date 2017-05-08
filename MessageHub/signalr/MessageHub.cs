@@ -559,7 +559,7 @@ namespace signalr.MessageHub
                         GetMessageHubStatus("连接的对象是看门狗" + Context.QueryString["Name"]);
                         if (sessionObjectList.Count(x => x.ClientName == Context.QueryString["Name"]) > 0)
                         {
-                            //.LogWarning("更新看门狗ID", Context.QueryString["Name"]);
+                            
                             sessionObjectList[sessionObjectList.FindIndex(x => x.ClientName == Context.QueryString["Name"])].ConnectionID = Context.ConnectionId;
                             WathDogCache(Context.QueryString["Name"]);
                         }
@@ -577,39 +577,6 @@ namespace signalr.MessageHub
                         AddToSession();//加入车道缓存。
                         break;
                 }
-
-                #region OldCode
-                //if (SetValue)//调试用赋值方法
-                //{
-                //    if (laneList.Count < 10)
-                //    {
-                //        for (int i = 1; i <= 10; i++)
-                //        {
-                //            Pf_Message_lane_Object laneobj = new Pf_Message_lane_Object { send_time = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}", lane = null, lane_code = "CN-XIAMEN-SXCT-000" + i };
-                //            if (i <= 5)
-                //            {
-                //                laneobj.lane = new Lane { lane_code = "CN-XIAMEN-SXCT-000" + i, update_time = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}", lane_name = "GI0" + i, lane_type = "重车进闸", direction = "In" };
-                //                laneList.TryAdd(i, laneobj);
-
-
-                //            }
-                //            else
-                //            {
-                //                laneobj.lane = new Lane { lane_code = "CN-XIAMEN-SXCT-000" + i, update_time = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}", lane_name = "GO0" + (i - 5), lane_type = "重车出闸", direction = "Out" };
-                //                laneList.TryAdd(i, laneobj);
-                //            }
-                //            laneList.OrderBy(x => x.Key <= 10);
-
-                //            if (laneList.Count == 10)
-                //            {
-                //                string str = JsonHelper.SerializeObject(laneList);
-                //                File.WriteAllText("wwwroot/conf/lanelist.json", str);
-                //            }
-                //        }
-
-                //    }
-                //}
-                #endregion
 
                 F5();
                 refreshLaneList();//刷新车道。
@@ -691,7 +658,7 @@ namespace signalr.MessageHub
         /// <returns></returns>
         public override Task OnReconnected()
         {
-            return base.OnConnected();
+            return OnConnected();
         }
         #endregion
         #region 给予前端修改的执行结果反馈

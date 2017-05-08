@@ -19,7 +19,7 @@
       <publishTime>05/03/2017 17:03:30</publishTime>
     </File>
     <File Include="bin/MessageHub.dll">
-      <publishTime>05/05/2017 16:02:06</publishTime>
+      <publishTime>05/08/2017 10:02:44</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>11/30/2016 16:07:42</publishTime>
@@ -250,28 +250,28 @@
       <publishTime>04/28/2017 11:31:25</publishTime>
     </File>
     <File Include="Views/MessageHub/connection.cshtml">
-      <publishTime>04/28/2017 12:12:10</publishTime>
+      <publishTime>05/05/2017 16:11:00</publishTime>
     </File>
     <File Include="Views/MessageHub/directive.cshtml">
-      <publishTime>05/05/2017 16:01:16</publishTime>
+      <publishTime>05/05/2017 16:11:01</publishTime>
     </File>
     <File Include="Views/MessageHub/lane.cshtml">
-      <publishTime>04/28/2017 11:27:04</publishTime>
+      <publishTime>05/05/2017 16:11:01</publishTime>
     </File>
     <File Include="Views/MessageHub/Logs.cshtml">
-      <publishTime>05/05/2017 15:56:19</publishTime>
+      <publishTime>05/05/2017 16:11:01</publishTime>
     </File>
     <File Include="Views/MessageHub/Queue.cshtml">
-      <publishTime>05/05/2017 15:22:12</publishTime>
+      <publishTime>05/05/2017 16:11:01</publishTime>
     </File>
     <File Include="Views/MessageHub/server.cshtml">
-      <publishTime>05/05/2017 15:07:12</publishTime>
+      <publishTime>05/05/2017 16:11:01</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>04/28/2017 11:31:13</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>05/05/2017 15:54:53</publishTime>
+      <publishTime>05/08/2017 10:02:17</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>04/28/2017 11:31:18</publishTime>

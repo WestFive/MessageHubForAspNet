@@ -21,8 +21,10 @@ namespace MessageHub
                 var hubConfiguration = new HubConfiguration
                 {
                     //EnableJSONP = true,
+                    
                 };
                 map.RunSignalR(hubConfiguration);
+            
 
             });
 
