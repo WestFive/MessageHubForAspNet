@@ -9,10 +9,11 @@ using System.IO;
 using Microsoft.AspNet.SignalR.Hubs;
 using System.Threading.Tasks;
 using Data.Model;
+using MessageHub.Inteface;
 
 namespace signalr.MessageHub
 {
-    public class MessageHub : Hub
+    public class MessageHub : Hub, IMessageHub
     {
         #region 日志及初始化
         ///日志记录
@@ -202,7 +203,6 @@ namespace signalr.MessageHub
 
         }
         #endregion
-
         #region 车道监控发送消息给车道代理
         /// <summary>
         /// 发送消息
@@ -298,7 +298,7 @@ namespace signalr.MessageHub
             }
         }
 
-        private void InsertLog(string Value)
+        public void InsertLog(string Value)
         {
             try
             {
@@ -496,7 +496,7 @@ namespace signalr.MessageHub
 
         #endregion
         #region  添加到会话缓存列表
-        private void AddToSession()
+        public void AddToSession()
         {
             try
             {
@@ -559,7 +559,7 @@ namespace signalr.MessageHub
                         GetMessageHubStatus("连接的对象是看门狗" + Context.QueryString["Name"]);
                         if (sessionObjectList.Count(x => x.ClientName == Context.QueryString["Name"]) > 0)
                         {
-                            
+
                             sessionObjectList[sessionObjectList.FindIndex(x => x.ClientName == Context.QueryString["Name"])].ConnectionID = Context.ConnectionId;
                             WathDogCache(Context.QueryString["Name"]);
                         }

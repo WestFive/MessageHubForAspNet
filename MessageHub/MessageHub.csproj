@@ -228,6 +228,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Inteface\IMessageHub.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="signalr\MessageHub.cs" />
     <Compile Include="Startup.cs" />

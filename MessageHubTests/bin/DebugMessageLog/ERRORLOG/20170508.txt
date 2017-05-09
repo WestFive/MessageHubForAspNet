@@ -1,0 +1,11 @@
+****************************异常文本****************************
+【模块名称】：还原出厂缓存失败
+【出现时间】：2017/5/8 11:28:40
+【异常类型】：ArgumentException
+【异常信息】：已添加了具有相同键的项。
+【堆栈调用】：   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 signalr.MessageHub.MessageHub.LoadServerDefaultCache() 位置 E:\厦门项目\MessageHubAspNet\MessageHub\MessageHub\signalr\MessageHub.cs:行号 682
+***************************************************************
+
