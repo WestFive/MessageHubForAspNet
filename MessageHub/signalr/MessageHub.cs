@@ -331,6 +331,7 @@ namespace signalr.MessageHub
                     case "lane":
                         lock (laneList)
                         {
+                            GetMessageHubStatus("change-lane事件触发");
                             Pf_Message_lane_Object lanecontent = JsonHelper.DeserializeJsonToObject<Pf_Message_lane_Object>(JsonHelper.SerializeObject(obj.message_content));
                             if (laneList.Count(x => x.Key == lanecontent.lane_code) > 0)
                             {
@@ -344,6 +345,7 @@ namespace signalr.MessageHub
                     case "queue":
                         lock (QueueList)
                         {
+                            GetMessageHubStatus("change-queue事件触发");
                             Pf_Messge_Queue_Object queuecontent = JsonHelper.DeserializeJsonToObject<Pf_Messge_Queue_Object>(JsonHelper.SerializeObject(obj.message_content));
                             switch (queuecontent.action)
                             {
@@ -550,9 +552,17 @@ namespace signalr.MessageHub
                         AddToSession();//加入车道缓存。
                         break;
                     case "Broswer":
-                        //.LogWarning("连接的对象是浏览器" + Context.QueryString["Name"]);
                         GetMessageHubStatus("连接的对象是浏览器" + Context.QueryString["Name"]);
-                        AddToSession();//加入车道缓存。
+                        if (sessionObjectList.Count(x => x.ConnectionID == Context.ConnectionId) > 0)
+                        {
+                            sessionObjectList[sessionObjectList.FindIndex(x => x.ConnectionID == Context.ConnectionId)].ConnectionID = Context.ConnectionId;
+                        }//替换连接ID
+                        else
+                        {
+                            //.LogWarning("连接的对象是浏览器" + Context.QueryString["Name"]);
+                          
+                            AddToSession();//加入车道缓存。
+                        }
                         break;
                     case "WatchDog":
                         //.LogWarning("连接的对象是看门狗" + Context.QueryString["Name"]);
@@ -651,16 +661,16 @@ namespace signalr.MessageHub
             return base.OnDisconnected(stopCalled);
         }
         #endregion
-        #region 重连事件
-        /// <summary>
-        /// 重连触发连接事件。
-        /// </summary>
-        /// <returns></returns>
-        public override Task OnReconnected()
-        {
-            return OnConnected();
-        }
-        #endregion
+        //#region 重连事件
+        ///// <summary>
+        ///// 重连触发连接事件。
+        ///// </summary>
+        ///// <returns></returns>
+        //public override Task OnReconnected()
+        //{
+        //    return OnConnected();
+        //}
+        //#endregion
         #region 给予前端修改的执行结果反馈
         //给予前端执行结果指令。
         public void GetMessageHubStatus(string str)
