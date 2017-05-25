@@ -77,7 +77,7 @@ namespace signalr.MessageHub
         /// 作业信息列表
         /// </summary>
         //public static List<Pf_Messge_Queue_Object> QueueList = new List<Pf_Messge_Queue_Object>();
-        public static ConcurrentDictionary<int, Pf_Messge_Queue_Object> QueueList = new ConcurrentDictionary<int, Pf_Messge_Queue_Object>();
+        public static Dictionary<string, dynamic> QueueList = new Dictionary<string, dynamic>();
 
         public static int queue_number = 1;
         /// <summary>
@@ -111,11 +111,6 @@ namespace signalr.MessageHub
             {
                 laneList.OrderBy(x => x.Key[x.Key.Length - 1]);
                 List<object> lanes = new List<object>();
-                //foreach (var item in laneList)
-                //{
-                //    lanes.Add(item.Value);
-
-                //}
                 Parallel.ForEach(laneList, item =>
                 {
                     lanes.Add(item.Value);
@@ -353,13 +348,13 @@ namespace signalr.MessageHub
                                 case "create":
                                     if (QueueList.Count(x => x.Value.queue_code == queuecontent.queue_code) == 0)//没有这个元素时才能创建
                                     {
-                                        if (queue_number == 65534)
-                                        {
-                                            queue_number = 1;
-                                            //.LogWarning("服务已处理了65535票作业，计数归零");
-                                        }
+                                        //if (queue_number == 65534)
+                                        //{
+                                        //    queue_number = 1;
+                                        //    //.LogWarning("服务已处理了65535票作业，计数归零");
+                                        //}
                                         queuecontent.create_time = DateTime.Now.ToString();
-                                        QueueList.TryAdd(queue_number++, queuecontent);
+                                        QueueList.Add(queuecontent.queue_code, queuecontent);
                                         //.LogWarning("服务已处理了" + queue_number + "条作业");
                                         GetMessageHubStatus(queuecontent.lane_code + "创建了一票作业" + queuecontent.queue_code);
                                     }
@@ -375,13 +370,11 @@ namespace signalr.MessageHub
                                     if (QueueList.Count(x => x.Value.queue_code == queuecontent.queue_code) > 0)
                                     {
                                         Pf_Messge_Queue_Object outobj = new Pf_Messge_Queue_Object();
-                                        QueueList.TryRemove(QueueList.FirstOrDefault(x => x.Value.queue_code == queuecontent.queue_code).Key, out outobj);
+                                        QueueList.Remove(QueueList.FirstOrDefault(x => x.Value.queue_code == queuecontent.queue_code).Key);
                                         GetMessageHubStatus(queuecontent.lane_code + "删除作业" + queuecontent.queue_code);
                                     }
-
                                     break;
                             }
-
 
                         }
                         refreshQueueList();//刷新作业
