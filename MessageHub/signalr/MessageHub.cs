@@ -223,7 +223,7 @@ namespace signalr.MessageHub
                             {
                                 Clients.Client(sessionObjectList[sessionObjectList.FindIndex(x => x.ClientName == laneCode)].ConnectionID).reciveMessage(JsonHelper.SerializeObject(obj));
 
-                                InsertLog("投递信息给:" + lanecontent.lane_code + "\r" + "信息内容是" + JsonHelper.SerializeObject(obj));
+                                InsertLog("投递信息给:" + lanecontent.lane_code + "\r" + "信息内容是" + JsonHelper.ConvertJsonString(JsonHelper.SerializeObject(obj)));
                                 GetMessageHubStatus("已通知车道laneID为:" + laneCode + "信息类型：lane");
                             }
 
@@ -234,7 +234,8 @@ namespace signalr.MessageHub
                         if (sessionObjectList.Count(x => x.ClientName == directivecontent.recipient_code) > 0)
                         {
                             Clients.Client(sessionObjectList[sessionObjectList.FindIndex(x => x.ClientName == directivecontent.recipient_code)].ConnectionID).reciveMessage(JsonHelper.SerializeObject(obj));
-                            InsertLog("投递信息给" + directivecontent.recipient_code + "\r" + "信息内容是" + JsonHelper.SerializeObject(obj));
+                            //InsertLog("投递信息给" + directivecontent.recipient_code + "\r" + "信息内容是" + JsonHelper.SerializeObject(obj));
+                            Loger.WriteLog(sessionObjectList[sessionObjectList.FindIndex(x => x.ConnectionID == Context.ConnectionId)].ClientName + "投递信息给" + directivecontent.recipient_code + "\r信息内容是" + JsonHelper.SerializeObject(obj), "MessageLog/SendMessage");
                             GetMessageHubStatus("已通知车道laneID为:" + laneCode + "信息类型：directive");
                         }
                         break;
@@ -248,7 +249,8 @@ namespace signalr.MessageHub
 
                                 Clients.Client(sessionObjectList[sessionObjectList.FindIndex(x => x.ClientName == laneCode)].ConnectionID).reciveMessage(JsonHelper.SerializeObject(obj));
 
-                                InsertLog("投递信息给" + queuecontent.lane_code + "\r" + "信息内容是" + JsonHelper.SerializeObject(obj));
+                                //InsertLog("投递信息给" + queuecontent.lane_code + "\r" + "信息内容是" + JsonHelper.SerializeObject(obj));
+                                Loger.WriteLog(sessionObjectList[sessionObjectList.FindIndex(x => x.ConnectionID == Context.ConnectionId)].ClientName + "投递信息给" + queuecontent.lane_code + "\r信息内容是" + JsonHelper.ConvertJsonString(JsonHelper.SerializeObject(obj)), "MessageLog/SendMessage");
                                 GetMessageHubStatus("已通知车道laneID为:" + queuecontent.lane_code + "信息类型：queue");
                             }
 
@@ -262,7 +264,8 @@ namespace signalr.MessageHub
                             if (serverList.Count(x => x.Key == laneCode) > 0)
                             {
                                 Clients.Client(sessionObjectList[sessionObjectList.FindIndex(x => x.ClientName == laneCode)].ConnectionID).reciveMessage(JsonHelper.SerializeObject(obj));
-                                InsertLog("投递信息给" + servers.server_code + "\r信息内容是" + JsonHelper.SerializeObject(obj));
+                                //InsertLog("投递信息给" + servers.server_code + "\r信息内容是" + JsonHelper.SerializeObject(obj));
+                                Loger.WriteLog(sessionObjectList[sessionObjectList.FindIndex(x => x.ConnectionID == Context.ConnectionId)].ClientName + "投递信息给" + servers.server_code + "\r信息内容是" + JsonHelper.ConvertJsonString(JsonHelper.SerializeObject(obj)), "MessageLog/SendMessage");
                                 GetMessageHubStatus("已通知WatchDogID为" + servers.server_code + "信息");
                             }
                         }
@@ -332,6 +335,7 @@ namespace signalr.MessageHub
                             {
                                 laneList[lanecontent.lane_code] = lanecontent.lane;
                                 GetMessageHubStatus(lanecontent.lane_code + "修改了自身的车道缓存");
+                                Loger.WriteLog(lanecontent.lane_code + "修改了自身的车道缓存" + JsonHelper.SerializeObject(lanecontent), "MessageLog/QueueLog");
                             }
 
                         }
@@ -357,6 +361,7 @@ namespace signalr.MessageHub
                                         QueueList.Add(queuecontent.queue_code, queuecontent);
                                         //.LogWarning("服务已处理了" + queue_number + "条作业");
                                         GetMessageHubStatus(queuecontent.lane_code + "创建了一票作业" + queuecontent.queue_code);
+                                        Loger.WriteLog(queuecontent.lane_code + "创建了一票作业" + queuecontent.queue_code + "作业内容为：" + JsonHelper.ConvertJsonString(JsonHelper.SerializeObject(queuecontent)), "MessageLog/QueueLog");
                                     }
                                     break;
                                 case "update":
@@ -364,6 +369,7 @@ namespace signalr.MessageHub
                                     {
                                         QueueList[QueueList.First(x => x.Value.queue_code == queuecontent.queue_code).Key] = queuecontent;
                                         GetMessageHubStatus(queuecontent.lane_code + "更新作业" + queuecontent.queue_code + "中");
+                                        Loger.WriteLog(queuecontent.lane_code + "更新了一票作业" + queuecontent.queue_code + "作业内容为：" + JsonHelper.ConvertJsonString(JsonHelper.SerializeObject(queuecontent)), "MessageLog/QueueLog");
                                     }
                                     break;
                                 case "delete":
@@ -372,6 +378,7 @@ namespace signalr.MessageHub
                                         Pf_Messge_Queue_Object outobj = new Pf_Messge_Queue_Object();
                                         QueueList.Remove(QueueList.FirstOrDefault(x => x.Value.queue_code == queuecontent.queue_code).Key);
                                         GetMessageHubStatus(queuecontent.lane_code + "删除作业" + queuecontent.queue_code);
+                                        Loger.WriteLog(queuecontent.lane_code + "删除了一票作业" + queuecontent.queue_code + "作业内容为：" + JsonHelper.ConvertJsonString(JsonHelper.SerializeObject(queuecontent)), "MessageLog/QueueLog");
                                     }
                                     break;
                             }
@@ -387,6 +394,7 @@ namespace signalr.MessageHub
                             {
                                 serverList[servercontent.server_code] = servercontent.server;//更新server
                                 GetMessageHubStatus("看门狗" + servercontent.server_code + "修改了自身缓存");
+                                Loger.WriteLog("看门狗" + servercontent.server_code + "修改了自身缓存" + JsonHelper.ConvertJsonString(JsonHelper.SerializeObject(servercontent)), "MessageLog/WatchdogLog");
                             }
 
                         }
@@ -553,7 +561,7 @@ namespace signalr.MessageHub
                         else
                         {
                             //.LogWarning("连接的对象是浏览器" + Context.QueryString["Name"]);
-                          
+
                             AddToSession();//加入车道缓存。
                         }
                         break;

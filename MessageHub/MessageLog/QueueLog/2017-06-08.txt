@@ -1,0 +1,144 @@
+2017-06-08 11:03:50:137：ryu创建了一票作业3752b5e2-f448-46fa-87a6-186c65ac69ac作业内容为：{
+    "lane_code": "ryu",
+    "queue_code": "3752b5e2-f448-46fa-87a6-186c65ac69ac",
+    "action": "create",
+    "create_time": "2017/6/8 11:03:50",
+    "send_time": "2017-05-09 23:44:41",
+    "queue": {
+        "lane_code": "ryu",
+        "lane_name": "G404",
+        "queue_code": "3752b5e2-f448-46fa-87a6-186c65ac69ac",
+        "is_lock": "null",
+        "direction": null,
+        "lock_time": "",
+        "user": "",
+        "start_time": "2017-05-09 23:44:40",
+        "end_time": "2017-05-09 23:44:40",
+        "truck_no": null,
+        "orc_truck_no": "",
+        "ocr_truck_no": null,
+        "rfid_truck_no": "",
+        "total_weight": "",
+        "ic_card_no": "",
+        "container_amount": 0,
+        "damage_check_amount": 0,
+        "damage_part_amount": 0,
+        "submit_amount": 0,
+        "truck_pic_url": "123.jpg",
+        "truck_crop_pic_url": "123.jpg",
+        "front_top_pic_url": "123.jpg",
+        "back_top_pic_url": "123.jpg",
+        "left_front_pic_url": "123.jpg",
+        "left_back_pic_url": "123.jpg",
+        "right_front_pic_url": "123.jpg",
+        "right_back_pic_url": "123.jpg",
+        "left_damage_pic_url": "123.jpg",
+        "right_damage_pic_url": "123.jpg",
+        "top_damage_pic_url": "XSCT/20170424/G205/20170424-105505-973.jpg",
+        "processes": [
+            {
+                "step": 1,
+                "code": "lane_ready",
+                "display": "车道就绪",
+                "status": true
+            },
+            {
+                "step": 2,
+                "code": "has_truck",
+                "display": "感应来车",
+                "status": false
+            },
+            {
+                "step": 3,
+                "code": "truck_rfid",
+                "display": "车牌读卡",
+                "status": false
+            },
+            {
+                "step": 4,
+                "code": "truck_ocr",
+                "display": "车牌识别",
+                "status": false
+            },
+            {
+                "step": 5,
+                "code": "container_ocr",
+                "display": "箱号识别",
+                "status": false
+            },
+            {
+                "step": 6,
+                "code": "read_ic_card",
+                "display": "司机读卡",
+                "status": false
+            },
+            {
+                "step": 7,
+                "code": "damage_check",
+                "display": "箱体验残",
+                "status": false
+            },
+            {
+                "step": 8,
+                "code": "submit_to_tos",
+                "display": "提交TOS",
+                "status": false
+            },
+            {
+                "step": 9,
+                "code": "reply_from_tos",
+                "display": "TOS反馈",
+                "status": false
+            },
+            {
+                "step": 10,
+                "code": "print_recipt",
+                "display": "打印小票",
+                "status": false
+            },
+            {
+                "step": 11,
+                "code": "lift_barrier",
+                "display": "抬杆放行",
+                "status": false
+            }
+        ],
+        "containers": [
+            {
+                "position": "前箱",
+                "container_no": "CBHU1232443",
+                "ocr_container_no": "CBHU1232443",
+                "iso_code": "22G0",
+                "job_type": "还柜",
+                "damages": [
+                    {
+                        "side": "左面",
+                        "damage_code": "凹陷，刮伤",
+                        "damage_grade": "轻微",
+                        "damage_part": "箱角",
+                        "remark": "测试文本"
+                    }
+                ],
+                "send_email": ""
+            },
+            {
+                "position": "后箱",
+                "container_no": "CBHU1232455",
+                "ocr_container_no": "CBHU1232455",
+                "iso_code": "22G0",
+                "job_type": "还柜",
+                "damages": [
+                    {
+                        "side": "左面",
+                        "damage_code": "凹陷，刮伤",
+                        "damage_grade": "轻微",
+                        "damage_part": "箱角",
+                        "remark": "测试文本"
+                    }
+                ],
+                "send_email": ""
+            }
+        ],
+        "update_time": "2017-05-09 23:44:40"
+    }
+}

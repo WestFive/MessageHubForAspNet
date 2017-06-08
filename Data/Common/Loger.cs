@@ -176,6 +176,84 @@ namespace Data.Common
                 return;
             }
         }
+
+
+
+        private static void WriteLog(string strMsg, string strPath, string fileName)
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory + strPath;
+            if (!path.EndsWith("\\") || !path.EndsWith("/"))
+            {
+                path += "\\";
+            }
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+            DeleteLog(path);
+            if (fileName == "")
+            {
+                fileName = DateTime.Now.ToString("yyyy-MM-dd") + ".txt";
+            }
+            if (!fileName.EndsWith(".txt"))
+            {
+                fileName += ".txt";
+            }
+            try
+            {
+                //string fileName =DateTime.Now.ToString("yyyy-MM-dd") + ".txt";
+
+                StreamWriter sw = File.AppendText(path + fileName);
+
+                sw.WriteLine("{0}：{1}", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss:fff"), strMsg);
+                //sw.WriteLine("\n\r");
+                sw.Flush();
+                sw.Close();
+            }
+            catch { }
+        }
+        /// <summary>
+        /// 写日志
+        /// </summary>
+        /// <param name="strMsg">内容</param>
+        /// <param name="strPath">相对路径</param>
+        public static void WriteLog(string strMsg, string strPath)
+        {
+            string fileName = DateTime.Now.ToString("yyyy-MM-dd") + ".txt";
+            WriteLog(strMsg, strPath, fileName);
+        }
+
+        private static void DeleteLog(string strPath)
+        {
+            if (Directory.Exists(strPath))
+            {
+                DirectoryInfo dinfor = new DirectoryInfo(strPath);
+                FileInfo[] files = dinfor.GetFiles();
+                foreach (FileInfo file in files)
+                    try
+                    {
+                        //删除创建日志日期是3个月前的日志
+                        if (DateTime.Compare(file.CreationTime.AddMonths(3), DateTime.Now) < 0)
+                        {
+                        }
+                        //删除最后修改日志日期是3个月前的日志
+                        if (DateTime.Compare(file.LastWriteTime.AddMonths(3), DateTime.Now) < 0)
+                        {
+                            file.Delete();
+                        }
+                        //删除日志名称日期是3个月前的日志
+                        if (DateTime.Compare(Convert.ToDateTime(file.Name.Substring(0, 10)), DateTime.Now.AddMonths(-3)) < 0)
+                        {
+                            file.Delete();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        continue;
+                    }
+            }
+        }
     }
 }
+
 
